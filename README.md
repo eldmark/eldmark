@@ -1,16 +1,90 @@
-## Hi there 👋
+# Greetings, I'm Marco Díaz
 
-<!--
-**eldmark/eldmark** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Backend Developer with a strong foundation in systems, algorithms, and software architecture.
 
-Here are some ideas to get you started:
+I focus on building scalable backend systems, designing APIs, and understanding how software works internally — from interpreters to concurrent systems.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## What I Do
+
+- Design and build REST APIs (Node.js, Go, Spring Boot)
+- Work with relational databases (PostgreSQL, MariaDB)
+- Apply data structures and algorithms to real systems
+- Develop containerized applications using Docker
+- Explore low-level concepts like interpreters and concurrency
+
+---
+
+## Tech Stack
+
+**Backend:** Node.js, TypeScript, Go, Java (Spring Boot)  
+**Databases:** PostgreSQL, MariaDB, SQL  
+**Tools:** Docker, Git, GitHub, Prisma  
+**Concepts:** REST APIs, Client-Server Architecture, Concurrency, System Design  
+
+---
+
+## Featured Projects
+
+### 🔹 Lisp Interpreter
+Built a Lisp-like interpreter from scratch implementing:
+- Tokenization → Parsing (AST) → Evaluation
+- Recursive execution and user-defined functions
+- Context handling and REPL
+
+Demonstrates deep understanding of language design and execution models
+
+---
+
+### 🔹 Trash Detection API (AI + Geodata)
+Backend system for image-based trash classification using AI:
+- Claude 3.5 integration for image analysis
+- Geo-based data aggregation (heatmaps, routes)
+- Prisma + SQLite/Turso + optional Cloudinary
+
+ Real-world backend with external APIs and data processing
+
+---
+
+### 🔹 Fullstack Task Manager (Angular + Elysia + Prisma)
+Modern fullstack application with:
+- Angular frontend (RxJS, services, state handling)
+- REST API with Elysia (Bun runtime)
+- PostgreSQL with Prisma ORM
+
+Demonstrates clean architecture and end-to-end development
+
+---
+
+### 🔹 Concurrent Console Game (C++)
+Terminal-based game with:
+- Multi-threaded enemy and boss behavior
+- Synchronization using mutexes and condition variables
+- Real-time game loop and collision detection
+
+ Strong systems programming and concurrency fundamentals
+
+---
+
+## 🏆 Achievements
+
+- ICPC Central America Finalist  
+- Top 8 – Cursor Hackathon (40 teams)  
+
+---
+
+## 📚 Currently
+
+- Improving system design and backend architecture  
+- Exploring distributed systems and cloud technologies  
+
+---
+
+## 📫 Contact
+
+- 📧 marcoalejandro.diazcastaneda@gmail.com  
+- 💼 [LinkedIn](https://linkedin.com/in/marco-diaz21)  
+- 🌐 [Portfolio](https://my-portfolio-tawny-eight-80.vercel.app/)  
+
+---
