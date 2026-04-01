@@ -74,6 +74,39 @@ Terminal-based game with:
 
 ---
 
+## 📊 GitHub Stats
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=eldmark&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eldmark&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <img height="165" src="https://streak-stats.demolab.com?user=eldmark&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=eldmark&theme=tokyonight&no-frame=true&row=1&column=6" />
+</p>
+
+---
+
+## 🚧 Currently working on
+
+<!-- CURRENTLY_WORKING_START -->
+- Working on **eldmark/eldmark** (main) — keeping the profile fresh
+<!-- CURRENTLY_WORKING_END -->
+
+---
+
+## 🧾 Latest commit
+
+<!-- LATEST_COMMIT_START -->
+- _(auto-updated by CI)_
+<!-- LATEST_COMMIT_END -->
+
+---
+
 ## 📚 Currently
 
 - Improving system design and backend architecture  
