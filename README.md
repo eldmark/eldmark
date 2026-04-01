@@ -97,7 +97,7 @@ Terminal game with multi-threaded behavior:
 ## 🚧 Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `f9cda38` Remove Vercel cards; keep streak stats
+- Working on **eldmark/eldmark** (main) — `344801d` chore: update README (latest commit)
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -105,5 +105,5 @@ Terminal game with multi-threaded behavior:
 ## 🧾 Latest commit
 
 <!-- LATEST_COMMIT_START -->
-- 🔖 `f9cda38` · Remove Vercel cards; keep streak stats _(2026-03-31)_
+- 🔖 `344801d` · chore: update README (latest commit) _(2026-04-01)_
 <!-- LATEST_COMMIT_END -->
