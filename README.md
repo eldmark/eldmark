@@ -106,7 +106,7 @@ Terminal game with multi-threaded behavior:
 ## 🚧 Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `5669983` Update README.md with new content
+- Working on **eldmark/eldmark** (main) — `10eab35` Update README.md with new content
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -114,5 +114,5 @@ Terminal game with multi-threaded behavior:
 ## 🧾 Latest commit
 
 <!-- LATEST_COMMIT_START -->
-- 🔖 `5669983` · Update README.md with new content _(2026-04-01)_
+- 🔖 `10eab35` · Update README.md with new content _(2026-03-31)_
 <!-- LATEST_COMMIT_END -->
