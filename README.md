@@ -11,16 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=eldmark&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400" height="165" />
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=eldmark&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=86400" height="165" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=eldmark&theme=tokyonight&hide_border=true" height="165" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=eldmark&theme=tokyonight&no-frame=true&row=1&column=6" />
+  <img src="https://streak-stats.demolab.com/?user=eldmark&theme=tokyonight&hide_border=true" height="165" />
 </p>
 
 ---
@@ -114,5 +105,5 @@ Terminal game with multi-threaded behavior:
 ## 🧾 Latest commit
 
 <!-- LATEST_COMMIT_START -->
-- 🔖 `10eab35` · Update README.md with new content _(2026-03-31)_
+- 🔖 `10eab35` · Update README.md with new content _(2026-04-01)_
 <!-- LATEST_COMMIT_END -->
