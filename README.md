@@ -94,7 +94,7 @@ Terminal-based game with:
 ## 🚧 Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — keeping the profile fresh
+- Working on **eldmark/eldmark** (main) — `978aee3` Merge pull request #1 from eldmark/copilot/improve-readme-github-stats
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -102,7 +102,7 @@ Terminal-based game with:
 ## 🧾 Latest commit
 
 <!-- LATEST_COMMIT_START -->
-- _(auto-updated by CI)_
+- 🔖 `978aee3` · Merge pull request #1 from eldmark/copilot/improve-readme-github-stats _(2026-03-31)_
 <!-- LATEST_COMMIT_END -->
 
 ---
