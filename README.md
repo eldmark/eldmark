@@ -70,7 +70,7 @@ Terminal-based game with:
 ## 🏆 Achievements
 
 - ICPC Central America Finalist  
-- Top 8 – Cursor Hackathon (40 teams)  
+- Top 8 – Cursor Hackathon Guatemala (40 teams)  
 
 ---
 
