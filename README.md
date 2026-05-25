@@ -97,7 +97,7 @@ Terminal game with multi-threaded behavior:
 ## 🚧 Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `1e143cd` chore: update README (latest commit)
+- Working on **eldmark/eldmark** (main) — `6cad788` chore: update README (latest commit)
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -105,5 +105,5 @@ Terminal game with multi-threaded behavior:
 ## 🧾 Latest commit
 
 <!-- LATEST_COMMIT_START -->
-- 🔖 `1e143cd` · chore: update README (latest commit) _(2026-05-23)_
+- 🔖 `6cad788` · chore: update README (latest commit) _(2026-05-24)_
 <!-- LATEST_COMMIT_END -->
