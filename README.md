@@ -7,7 +7,7 @@
 <p align="center">
   <a href="mailto:marcoalejandro.diazcastaneda@gmail.com">Email</a> •
   <a href="https://linkedin.com/in/marco-diaz21">LinkedIn</a> •
-  <a href="https://my-portfolio-tawny-eight-80.vercel.app/">Portfolio</a>
+  <a href="https://marcodiaz.me/">Portfolio</a>
 </p>
 
 <p align="center">
