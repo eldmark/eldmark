@@ -143,7 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `0a19322` feat(hero): animated CRT terminal panel with live status
+- Working on **eldmark/eldmark** (main) — `b712dff` feat(hero): real screenshots for e-commerce and barber shop cards
 <!-- CURRENTLY_WORKING_END -->
 
 ---
