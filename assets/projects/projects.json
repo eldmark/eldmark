@@ -10,19 +10,12 @@
       "fit": "cover"
     },
     {
-      "id": "ecoscan",
-      "title": "ECOSCAN",
-      "tech": "AI · Geodata · Backend",
-      "status": "COMPLETE",
-      "terminal": [
-        "$ POST /api/analyze-image",
-        "",
-        "  model    claude-3-5-sonnet",
-        "  store    turso / sqlite",
-        "  output   heatmap + geojson",
-        "",
-        "  200 OK   classified"
-      ]
+      "id": "bodegas",
+      "title": "ENTERPRISE E-COMMERCE",
+      "tech": "Vue · TypeScript · PostgreSQL",
+      "status": "DEPLOYED",
+      "image": "bodegas.jpg",
+      "fit": "cover"
     },
     {
       "id": "barbershop",
@@ -30,7 +23,7 @@
       "tech": "Bun · Elysia · PostgreSQL",
       "status": "COMPLETE",
       "image": "barbershop.jpg",
-      "fit": "contain"
+      "fit": "cover"
     },
     {
       "id": "teddyursa",
