@@ -1,0 +1,44 @@
+{
+  "_comment": "Hero carousel cards. Images are committed by hand; the generator never scrapes screenshots. Use 'terminal' instead of 'image' for projects with no UI.",
+  "cards": [
+    {
+      "id": "portfolio",
+      "title": "INTERACTIVE PORTFOLIO",
+      "tech": "React · Three.js · PostgreSQL",
+      "status": "DEPLOYED",
+      "image": "portfolio.jpg",
+      "fit": "cover"
+    },
+    {
+      "id": "ecoscan",
+      "title": "ECOSCAN",
+      "tech": "AI · Geodata · Backend",
+      "status": "COMPLETE",
+      "terminal": [
+        "$ POST /api/analyze-image",
+        "",
+        "  model    claude-3-5-sonnet",
+        "  store    turso / sqlite",
+        "  output   heatmap + geojson",
+        "",
+        "  200 OK   classified"
+      ]
+    },
+    {
+      "id": "barbershop",
+      "title": "BARBER SHOP PLATFORM",
+      "tech": "Bun · Elysia · PostgreSQL",
+      "status": "COMPLETE",
+      "image": "barbershop.jpg",
+      "fit": "contain"
+    },
+    {
+      "id": "teddyursa",
+      "title": "TEDDIURSA RAYTRACER",
+      "tech": "Rust · CPU Raytracer",
+      "status": "ACTIVE",
+      "image": "teddyursa.jpg",
+      "fit": "contain"
+    }
+  ]
+}

@@ -55,11 +55,18 @@ jobs:
           fi
           rm -f recent.txt
 
+      # The status panel is baked in here; the CRT carousel animates in the
+      # visitor's browser, so no workflow has to run to keep it moving.
+      - name: Regenerate hero panel
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/generate_hero.py "${{ github.repository_owner }}"
+
       - name: Commit changes if any
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          git add README.md assets/generated/hero.svg
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else

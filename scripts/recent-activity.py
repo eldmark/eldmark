@@ -33,6 +33,8 @@ def main():
         if event.get("type") != "PushEvent":
             continue
         repo = event["repo"]["name"]
+        if not repo.startswith(f"{user}/"):
+            continue  # coursework and forks are noise in a "what I build" feed
         sha = event["payload"].get("head")
         if not sha or (repo, sha) in seen:
             continue

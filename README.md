@@ -1,7 +1,5 @@
-<h1 align="center">Marco Díaz</h1>
-
 <p align="center">
-  <b>Full-Stack Software Engineer</b> · Backend Architecture · AI Integrations · Systems
+  <img src="./assets/generated/hero.svg" alt="Marco Díaz — Full-Stack Software Engineer. Backend, AI and Systems. Live status panel and a rotating showcase of four projects." width="940" />
 </p>
 
 <p align="center">
@@ -26,16 +24,16 @@ I build full-stack products and the backend architecture behind them: service la
 
 ## What I Build
 
-| Area | What that means in practice |
-| --- | --- |
-| **Backend architecture** | Centralized service layers, microservices, layered/modular designs |
-| **API design** | REST APIs with contract validation, versioned and consumed by web + mobile clients |
-| **AI integrations** | LLM-backed services, request optimization, MCP / tool-enabled systems |
-| **Full-stack products** | Monorepos where frontend, backend, and shared packages evolve independently |
-| **Data modeling** | Relational schemas, CTEs, stored procedures, triggers, analytical queries |
-| **Auth & access control** | JWT, OAuth2, RBAC, reusable route guards and middleware |
-| **Automation & delivery** | Scheduled jobs, CI/CD pipelines, containerized deploys to constrained hosts |
-| **Developer experience** | Diagnostics tooling, reproducible environments, documentation that stays true |
+| Area                      | What that means in practice                                                        |
+| ------------------------- | ---------------------------------------------------------------------------------- |
+| **Backend architecture**  | Centralized service layers, microservices, layered/modular designs                 |
+| **API design**            | REST APIs with contract validation, versioned and consumed by web + mobile clients |
+| **AI integrations**       | LLM-backed services, request optimization, MCP / tool-enabled systems              |
+| **Full-stack products**   | Monorepos where frontend, backend, and shared packages evolve independently        |
+| **Data modeling**         | Relational schemas, CTEs, stored procedures, triggers, analytical queries          |
+| **Auth & access control** | JWT, OAuth2, RBAC, reusable route guards and middleware                            |
+| **Automation & delivery** | Scheduled jobs, CI/CD pipelines, containerized deploys to constrained hosts        |
+| **Developer experience**  | Diagnostics tooling, reproducible environments, documentation that stays true      |
 
 ---
 
@@ -77,7 +75,7 @@ An explorable 3D room where each object opens a real section of the portfolio �
 
 ---
 
-### Enterprise E-Commerce Platform — *private*
+### Enterprise E-Commerce Platform — _private_
 
 Inventory, promotions, orders, and reservations for a commercial operation.
 
@@ -117,16 +115,19 @@ Fundamentals, kept because they still hold up.
 
 ## Experience
 
-**Full Stack Developer** — Softlogic S.A. · *Jun 2026 – Present*
+**Full Stack Developer** — Softlogic S.A. · _Jun 2026 – Present_
+
 - Redesigned inter-service communication through a centralized service layer, reducing duplicated integrations.
 - Built an AI integration microservice that cut token consumption by **~30%** through request optimization.
 - Integrated multiple external payment providers into the mobile platform using a loosely coupled architecture.
 
-**Backend Developer** — Freelance / Contract · *Jan 2026 – Present*
+**Backend Developer** — Freelance / Contract · _Jan 2026 – Present_
+
 - Modular backend systems with reusable authentication and authorization for enterprise use.
 - Relational data models and shared infrastructure components that removed duplicated business logic.
 
-**Teaching Assistant** — Universidad del Valle de Guatemala · *Jan 2026 – Jun 2026*
+**Teaching Assistant** — Universidad del Valle de Guatemala · _Jan 2026 – Jun 2026_
+
 - Mentored students in algorithms, concurrent programming, and software engineering principles.
 - Evaluated solutions on algorithmic complexity and long-term maintainability.
 
@@ -142,6 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
+
 - Working on **eldmark/eldmark** (main) — `887f6df` feat (Snake): added recent-activity and snake game
 <!-- CURRENTLY_WORKING_END -->
 
@@ -150,6 +152,7 @@ Fundamentals, kept because they still hold up.
 ## Recent development
 
 <!-- LATEST_COMMIT_START -->
+
 - **[teddyursa](https://github.com/eldmark/teddyursa)** · `4b9a036` — docs: add README covering usage, layout and the sphere layering model _(2026-08-14)_
 - **[Scholarship-Hours](https://github.com/eldmark/Scholarship-Hours)** · `3a0abbe` — docs(readme): Update configuration files and improve README instructions _(2026-08-12)_
 - **[pruebas_automatizadas](https://github.com/eldmark/pruebas_automatizadas)** · `92dedba` — Fix cross-navigation test-notice modal blocking clicks _(2026-08-06)_
