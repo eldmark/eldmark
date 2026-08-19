@@ -1,4 +1,4 @@
-name: Update README (latest commit)
+name: Update README (activity blocks)
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
   schedule:
     # Runs daily at 06:00 UTC
     - cron: "0 6 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -28,22 +29,31 @@ jobs:
       - name: Compute latest commit info
         id: commit
         run: |
-          SHA=$(git rev-parse --short HEAD)
-          SUBJECT=$(git log -1 --format="%s")
-          DATE=$(git log -1 --format="%ci" | cut -d' ' -f1)
-          echo "sha=$SHA"         >> "$GITHUB_OUTPUT"
-          echo "subject=$SUBJECT" >> "$GITHUB_OUTPUT"
-          echo "date=$DATE"       >> "$GITHUB_OUTPUT"
+          echo "sha=$(git rev-parse --short HEAD)"   >> "$GITHUB_OUTPUT"
+          echo "subject=$(git log -1 --format='%s')" >> "$GITHUB_OUTPUT"
 
       - name: Update CURRENTLY_WORKING block
         run: |
           CONTENT="- Working on **eldmark/eldmark** (main) — \`${{ steps.commit.outputs.sha }}\` ${{ steps.commit.outputs.subject }}"
           bash scripts/update-readme-blocks.sh README.md CURRENTLY_WORKING "$CONTENT"
 
+      # Latest public push events across all repositories, one line per commit.
+      # Written to a file (not a step output) so commit messages cannot break
+      # an output delimiter or be re-evaluated by the shell.
+      - name: Build recent development list
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/recent-activity.py "${{ github.repository_owner }}" 5 > recent.txt
+
       - name: Update LATEST_COMMIT block
         run: |
-          CONTENT="- 🔖 \`${{ steps.commit.outputs.sha }}\` · ${{ steps.commit.outputs.subject }} _(${{ steps.commit.outputs.date }})_"
-          bash scripts/update-readme-blocks.sh README.md LATEST_COMMIT "$CONTENT"
+          set -euo pipefail
+          if [ ! -s recent.txt ]; then
+            echo "No public push events found; leaving block untouched."
+          else
+            bash scripts/update-readme-blocks.sh README.md LATEST_COMMIT "$(cat recent.txt)"
+          fi
+          rm -f recent.txt
 
       - name: Commit changes if any
         run: |

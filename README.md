@@ -1,89 +1,134 @@
-# Marco Díaz
+<h1 align="center">Marco Díaz</h1>
 
 <p align="center">
-  <b>Backend Developer</b> • Systems & Algorithms • API Design • Concurrency
+  <b>Full-Stack Software Engineer</b> · Backend Architecture · AI Integrations · Systems
 </p>
 
 <p align="center">
-  <a href="mailto:marcoalejandro.diazcastaneda@gmail.com">Email</a> •
-  <a href="https://linkedin.com/in/marco-diaz21">LinkedIn</a> •
-  <a href="https://marcodiaz.me/">Portfolio</a>
+  <a href="https://marcodiaz.me/">Portfolio</a> ·
+  <a href="https://linkedin.com/in/marco-diaz21">LinkedIn</a> ·
+  <a href="mailto:marcoalejandro.diazcastaneda@gmail.com">Email</a>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=eldmark&theme=tokyonight&hide_border=true" height="165" />
+  <img src="https://komarev.com/ghpvc/?username=eldmark&style=flat&color=7aa2f7&label=profile+views" alt="Profile views" />
 </p>
 
 ---
 
 ## About
 
-Backend developer with a strong foundation in **systems**, **algorithms**, and **software architecture**.
+Software Engineer at **Softlogic S.A.** and Computer Science student at **Universidad del Valle de Guatemala**.
 
-I enjoy building scalable backend services, designing clean APIs, and understanding how software works internally — from **interpreters** to **concurrent systems**.
+I build full-stack products and the backend architecture behind them: service layers, REST APIs, relational data models, and AI integrations exposed as tool-enabled services (MCP). Most of my work is about keeping systems maintainable as they grow — decoupling integrations, removing duplicated business logic, and making infrastructure something the team stops thinking about.
 
 ---
 
-## What I Do
+## What I Build
 
-- **Design & build APIs** (Node.js, Go, Spring Boot)
-- **Data modeling & persistence** (PostgreSQL, MariaDB)
-- **Algorithms in production** (performance-minded engineering)
-- **Containerized delivery** (Docker)
-- **Systems fundamentals** (concurrency, interpreters, architecture)
+| Area | What that means in practice |
+| --- | --- |
+| **Backend architecture** | Centralized service layers, microservices, layered/modular designs |
+| **API design** | REST APIs with contract validation, versioned and consumed by web + mobile clients |
+| **AI integrations** | LLM-backed services, request optimization, MCP / tool-enabled systems |
+| **Full-stack products** | Monorepos where frontend, backend, and shared packages evolve independently |
+| **Data modeling** | Relational schemas, CTEs, stored procedures, triggers, analytical queries |
+| **Auth & access control** | JWT, OAuth2, RBAC, reusable route guards and middleware |
+| **Automation & delivery** | Scheduled jobs, CI/CD pipelines, containerized deploys to constrained hosts |
+| **Developer experience** | Diagnostics tooling, reproducible environments, documentation that stays true |
 
 ---
 
 ## Tech Stack
 
-| Category | Tools |
-| --- | --- |
-| **Backend** | Node.js, TypeScript, Go, Java (Spring Boot) |
-| **Databases** | PostgreSQL, MariaDB, SQL |
-| **Tooling** | Docker, Git, GitHub, Prisma |
-| **Core concepts** | REST APIs, Client–Server, Concurrency, System Design |
+**Languages**
+
+[![Languages](https://skillicons.dev/icons?i=ts,python,java,kotlin,cpp,php&theme=dark)](https://skillicons.dev)
+
+**Backend**
+
+[![Backend](https://skillicons.dev/icons?i=nodejs,express,spring,laravel,prisma,bun&theme=dark)](https://skillicons.dev)
+
+**Frontend**
+
+[![Frontend](https://skillicons.dev/icons?i=react,vue,threejs,vite,tailwind&theme=dark)](https://skillicons.dev)
+
+**Databases**
+
+[![Databases](https://skillicons.dev/icons?i=postgres,mysql,redis,neo4j&theme=dark)](https://skillicons.dev)
+
+**Infrastructure & Tooling**
+
+[![Infrastructure](https://skillicons.dev/icons?i=docker,githubactions,gcp,cloudflare,linux,git&theme=dark)](https://skillicons.dev)
+
+**AI & Architecture** — LLM integration · Agentic AI · Model Context Protocol (MCP) · Microservices · REST · OAuth2 · RBAC · JWT · Layered architecture
 
 ---
 
 ## Featured Projects
 
-### Lisp Interpreter
-A Lisp-like interpreter built from scratch:
-- Tokenization → Parsing (AST) → Evaluation
-- Recursive execution & user-defined functions
-- Context handling & REPL
+### [Interactive Developer Portfolio](https://github.com/eldmark/game-portafolio) · [marcodiaz.me](https://marcodiaz.me)
 
-**Focus:** language design + execution model.
+An explorable 3D room where each object opens a real section of the portfolio — plus a **Recruiter Mode**, a linear route for people who want the proof of work without the game.
 
----
+**Problem it solves:** an immersive portfolio normally costs a recruiter time. Two front doors over one dataset means neither audience is compromised.
 
-### Trash Detection API (AI + Geodata)
-Backend system for image-based trash classification:
-- Claude 3.5 integration for image analysis
-- Geo-based aggregation (heatmaps, routes)
-- Prisma + SQLite/Turso + optional Cloudinary
-
-**Focus:** real-world backend with external APIs + data processing.
+**What it demonstrates:** monorepo separation of frontend, backend, and shared packages; React Three Fiber scene with lazily mounted, code-split views; Express + Prisma + PostgreSQL API serving every piece of content; JWT-authenticated **admin dashboard** so projects and experience are updated without touching the client; fallback-first data loading that degrades quietly when the API is down; CI builds images to GHCR because the 1 GB production host cannot build them itself.
 
 ---
 
-### Fullstack Task Manager (Angular + Elysia + Prisma)
-Modern end-to-end application:
-- Angular frontend (RxJS, services, state handling)
-- REST API with Elysia (Bun runtime)
-- PostgreSQL with Prisma ORM
+### Enterprise E-Commerce Platform — *private*
 
-**Focus:** clean architecture + full delivery.
+Inventory, promotions, orders, and reservations for a commercial operation.
+
+**Problem it solves:** manual back-office work that did not scale with the catalog.
+
+**What it demonstrates:** modular design sized for business growth; scheduled jobs automating reservation lifecycle and auditing; external integrations for enterprise auth (Clerk + RBAC) and distributed storage (Cloudflare R2); containerized delivery through Docker and GitHub Container Registry.
 
 ---
 
-### Concurrent Console Game (C++)
-Terminal game with multi-threaded behavior:
-- Multi-threaded enemy & boss behavior
-- Synchronization with mutexes + condition variables
-- Real-time loop and collision detection
+### [Barber Shop Management Platform](https://github.com/eldmark/db_barbershop)
 
-**Focus:** systems programming + concurrency.
+Appointments, sales, inventory, and business reporting in one system.
+
+**Problem it solves:** decisions made from intuition because operational history was never queryable.
+
+**What it demonstrates:** a data model built for both transactions and historical analysis; analytical queries using CTEs, stored procedures, and triggers; role-based access (admin / employee / client) enforced by guards at the route layer; Bun + ElysiaJS backend with a React + TypeScript frontend.
+
+---
+
+### [Trash Detection API](https://github.com/eldmark/backend-ecoscan) — AI + Geodata
+
+Backend that classifies waste from photographs and turns the results into geographic intelligence.
+
+**Problem it solves:** field reports are unstructured images; collection routes need aggregates.
+
+**What it demonstrates:** LLM integration (Claude 3.5 Sonnet) for image analysis behind a REST boundary; pre-aggregated heat maps and GeoJSON routes; Prisma over SQLite/Turso with optional Cloudinary storage — external services kept optional rather than load-bearing.
+
+---
+
+### [Lisp Interpreter](https://github.com/eldmark/Proyect-Lisp-interpeter) · [Concurrent Console Game](https://github.com/eldmark/Concurrent-Console-Game)
+
+Fundamentals, kept because they still hold up.
+
+**What they demonstrate:** a language executed end to end — lexer → AST → evaluator → execution context, with recursion and user-defined functions; and a real-time C++ game loop where boss and escort behavior run on independent threads coordinated with mutexes and condition variables.
+
+---
+
+## Experience
+
+**Full Stack Developer** — Softlogic S.A. · *Jun 2026 – Present*
+- Redesigned inter-service communication through a centralized service layer, reducing duplicated integrations.
+- Built an AI integration microservice that cut token consumption by **~30%** through request optimization.
+- Integrated multiple external payment providers into the mobile platform using a loosely coupled architecture.
+
+**Backend Developer** — Freelance / Contract · *Jan 2026 – Present*
+- Modular backend systems with reusable authentication and authorization for enterprise use.
+- Relational data models and shared infrastructure components that removed duplicated business logic.
+
+**Teaching Assistant** — Universidad del Valle de Guatemala · *Jan 2026 – Jun 2026*
+- Mentored students in algorithms, concurrent programming, and software engineering principles.
+- Evaluated solutions on algorithmic complexity and long-term maintainability.
 
 ---
 
@@ -94,7 +139,7 @@ Terminal game with multi-threaded behavior:
 
 ---
 
-## 🚧 Currently working on
+## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
 - Working on **eldmark/eldmark** (main) — `deb966d` chore: update README (latest commit)
@@ -102,8 +147,35 @@ Terminal game with multi-threaded behavior:
 
 ---
 
-## 🧾 Latest commit
+## Recent development
 
 <!-- LATEST_COMMIT_START -->
 - 🔖 `deb966d` · chore: update README (latest commit) _(2026-08-18)_
 <!-- LATEST_COMMIT_END -->
+
+---
+
+## GitHub
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=eldmark&theme=tokyonight" alt="GitHub profile summary for eldmark" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=eldmark&theme=tokyonight" alt="Top languages by repository" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=eldmark&theme=tokyonight" alt="Top languages by commit" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=eldmark&theme=tokyonight&utcOffset=-6" alt="Commit activity by hour" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=eldmark&theme=tokyonight&no-frame=true&no-bg=true&column=6&margin-w=8&title=MultiLanguage,Repositories,Commits,Experience,PullRequest,Stars" alt="GitHub trophies" />
+</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/eldmark/eldmark/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/eldmark/eldmark/output/github-snake.svg" />
+  <img alt="Snake animation eating this profile's contribution graph" src="https://raw.githubusercontent.com/eldmark/eldmark/output/github-snake.svg" />
+</picture>

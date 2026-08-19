@@ -11,6 +11,9 @@ README="${1:-README.md}"
 BLOCK="${2}"     # e.g. CURRENTLY_WORKING or LATEST_COMMIT
 CONTENT="${3}"   # New block content (may be multi-line)
 
+# Passed through the environment so awk does not interpret backslash escapes.
+export BLOCK_CONTENT="$CONTENT"
+
 START_MARKER="<!-- ${BLOCK}_START -->"
 END_MARKER="<!-- ${BLOCK}_END -->"
 
@@ -31,8 +34,8 @@ fi
 
 # Use awk to replace everything between the two markers.
 awk -v start="$START_MARKER" \
-    -v end="$END_MARKER" \
-    -v content="$CONTENT" '
+    -v end="$END_MARKER" '
+  BEGIN { content = ENVIRON["BLOCK_CONTENT"] }
   $0 == start { print; print content; skip=1; next }
   $0 == end   { skip=0 }
   !skip        { print }
