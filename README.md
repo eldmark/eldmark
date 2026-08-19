@@ -143,8 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-
-- Working on **eldmark/eldmark** (main) — `887f6df` feat (Snake): added recent-activity and snake game
+- Working on **eldmark/eldmark** (main) — `0a19322` feat(hero): animated CRT terminal panel with live status
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -152,7 +151,6 @@ Fundamentals, kept because they still hold up.
 ## Recent development
 
 <!-- LATEST_COMMIT_START -->
-
 - **[teddyursa](https://github.com/eldmark/teddyursa)** · `4b9a036` — docs: add README covering usage, layout and the sphere layering model _(2026-08-14)_
 - **[Scholarship-Hours](https://github.com/eldmark/Scholarship-Hours)** · `3a0abbe` — docs(readme): Update configuration files and improve README instructions _(2026-08-12)_
 - **[pruebas_automatizadas](https://github.com/eldmark/pruebas_automatizadas)** · `92dedba` — Fix cross-navigation test-notice modal blocking clicks _(2026-08-06)_
