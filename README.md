@@ -142,7 +142,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `deb966d` chore: update README (latest commit)
+- Working on **eldmark/eldmark** (main) — `887f6df` feat (Snake): added recent-activity and snake game
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -150,7 +150,11 @@ Fundamentals, kept because they still hold up.
 ## Recent development
 
 <!-- LATEST_COMMIT_START -->
-- 🔖 `deb966d` · chore: update README (latest commit) _(2026-08-18)_
+- **[teddyursa](https://github.com/eldmark/teddyursa)** · `4b9a036` — docs: add README covering usage, layout and the sphere layering model _(2026-08-14)_
+- **[Scholarship-Hours](https://github.com/eldmark/Scholarship-Hours)** · `3a0abbe` — docs(readme): Update configuration files and improve README instructions _(2026-08-12)_
+- **[pruebas_automatizadas](https://github.com/eldmark/pruebas_automatizadas)** · `92dedba` — Fix cross-navigation test-notice modal blocking clicks _(2026-08-06)_
+- **[pruebas_automatizadas](https://github.com/eldmark/pruebas_automatizadas)** · `eb5838f` — Document all executed test cases and align test IDs _(2026-08-05)_
+- **[pruebas_automatizadas](https://github.com/eldmark/pruebas_automatizadas)** · `d60469f` — Point RF-1.1 tests to dev2.registro.gt and dismiss test-site notice modal _(2026-08-05)_
 <!-- LATEST_COMMIT_END -->
 
 ---
