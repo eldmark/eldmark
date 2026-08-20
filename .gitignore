@@ -1,2 +1,3 @@
 # Raw screenshots and recordings stay local; only cropped card images (.jpg) are committed.
 assets/projects/*.png
+__pycache__/

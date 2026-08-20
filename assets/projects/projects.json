@@ -1,5 +1,5 @@
 {
-  "_comment": "Hero carousel cards. 'source' (owner/repo:path[@ref]) re-downloads the image from the project's own repository on every run; without it the committed file is used as-is. Only point 'source' at images that are already safe to publish.",
+  "_comment": "Hero carousel cards. 'repo' ties a card to a repository: the one pushed to most recently leads the carousel. 'source' refreshes the image each run - either owner/repo:path[@ref], or \"auto\" to use an image the project publishes at one of CARD_PATHS. Without 'source' the committed file is used as-is. Only publish images that are already safe to show.",
   "cards": [
     {
       "id": "portfolio",
@@ -7,7 +7,9 @@
       "tech": "React · Three.js · PostgreSQL",
       "status": "DEPLOYED",
       "image": "portfolio.jpg",
-      "fit": "cover"
+      "fit": "cover",
+      "repo": "eldmark/game-portafolio",
+      "source": "auto"
     },
     {
       "id": "ecoscan",
@@ -15,7 +17,9 @@
       "tech": "AI · Geodata · Backend",
       "status": "COMPLETE",
       "image": "ecoscan.jpg",
-      "fit": "cover"
+      "fit": "cover",
+      "repo": "eldmark/backend-ecoscan",
+      "source": "auto"
     },
     {
       "id": "bodegas",
@@ -31,7 +35,9 @@
       "tech": "Bun · Elysia · PostgreSQL",
       "status": "COMPLETE",
       "image": "barbershop.jpg",
-      "fit": "cover"
+      "fit": "cover",
+      "repo": "eldmark/db_barbershop",
+      "source": "auto"
     },
     {
       "id": "teddyursa",
@@ -40,7 +46,8 @@
       "status": "ACTIVE",
       "image": "teddyursa.jpg",
       "fit": "contain",
-      "source": "eldmark/teddyursa:render.png"
+      "source": "eldmark/teddyursa:render.png",
+      "repo": "eldmark/teddyursa"
     }
   ]
 }

@@ -85,6 +85,28 @@ def data_uri(name):
     return f"data:{mime};base64," + base64.b64encode(raw).decode()
 
 
+# Where a project may publish an image for this profile. First hit wins.
+CARD_PATHS = (
+    ".github/profile-card.png",
+    ".github/profile-card.jpg",
+    "assets/profile-card.png",
+    "assets/profile-card.jpg",
+)
+
+
+def discover_source(repo):
+    """Find a card image a project publishes by convention, if any.
+
+    Nothing here guesses at arbitrary screenshots: a project opts in by
+    committing one of CARD_PATHS, which makes publishing it a decision taken in
+    that repository rather than by this script.
+    """
+    for path in CARD_PATHS:
+        if gh(f"repos/{repo}/contents/{path}"):
+            return f"{repo}:{path}"
+    return None
+
+
 def sync_image(card):
     """Refresh a card image from the project's own repository.
 
@@ -102,6 +124,10 @@ def sync_image(card):
     hero or break the workflow.
     """
     source = card.get("source")
+    if source == "auto":
+        source = discover_source(card["repo"]) if card.get("repo") else None
+        if not source:
+            return
     if not source:
         return
     dest = PROJECTS / card["image"]
@@ -271,12 +297,24 @@ def card_svg(index, card, x, y, w, h, count):
     return "\n".join(parts)
 
 
+def lead_with(cards, active_repo):
+    """Put the card for `active_repo` first, keeping the rest in order.
+
+    An active repository with no card of its own leaves the order untouched.
+    """
+    return sorted(cards, key=lambda c: c.get("repo", "").split("/")[-1] != active_repo)
+
+
 def build(user):
     cards = json.loads((PROJECTS / "projects.json").read_text())["cards"]
+    push = latest_push(user)
+
+    if push:
+        cards = lead_with(cards, push[0])
+
     for card in cards:
         if card.get("image"):
             sync_image(card)
-    push = latest_push(user)
 
     if push:
         repo, sha, days, pushed_on = push

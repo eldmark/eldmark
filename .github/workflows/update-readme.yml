@@ -57,6 +57,9 @@ jobs:
 
       # The status panel is baked in here; the CRT carousel animates in the
       # visitor's browser, so no workflow has to run to keep it moving.
+      - name: Check hero generator
+        run: python3 scripts/test_generate_hero.py
+
       - name: Regenerate hero panel
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
