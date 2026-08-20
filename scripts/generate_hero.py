@@ -15,8 +15,10 @@ nothing here takes screenshots. Usage:
 """
 import base64
 import json
+import shutil
 import subprocess
 import sys
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -73,9 +75,62 @@ def latest_push(user):
     return None
 
 
+MIME = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp"}
+
+
 def data_uri(name):
-    raw = (PROJECTS / name).read_bytes()
-    return "data:image/jpeg;base64," + base64.b64encode(raw).decode()
+    path = PROJECTS / name
+    raw = path.read_bytes()
+    mime = MIME.get(path.suffix.lower(), "image/jpeg")
+    return f"data:{mime};base64," + base64.b64encode(raw).decode()
+
+
+def sync_image(card):
+    """Refresh a card image from the project's own repository.
+
+    A card may carry `source: "owner/repo:path/in/repo.png[@ref]"`. The file is
+    downloaded and normalised into assets/projects/, so updating the screenshot
+    in the project repository is enough to change this profile.
+
+    Point `source` at an image the project publishes for this purpose. Do not
+    point it at a raw screenshot that needs cropping to be safe: the crop here
+    is fixed, and a re-shot screenshot framed differently would leak whatever
+    the crop was meant to remove.
+
+    Any failure leaves the committed image in place — a project repository
+    being renamed, made private, or briefly unreachable must not blank the
+    hero or break the workflow.
+    """
+    source = card.get("source")
+    if not source:
+        return
+    dest = PROJECTS / card["image"]
+    try:
+        repo_path, _, ref = source.partition("@")
+        repo, _, path = repo_path.partition(":")
+        query = f"repos/{repo}/contents/{path}" + (f"?ref={ref}" if ref else "")
+        meta = gh(query)
+        url = (meta or {}).get("download_url")
+        if not url:
+            raise RuntimeError(f"no download_url for {source}")
+
+        tmp = dest.with_suffix(dest.suffix + ".tmp")
+        with urllib.request.urlopen(url, timeout=30) as response:
+            tmp.write_bytes(response.read())
+
+        # Normalise so one oversized screenshot cannot bloat the SVG.
+        if shutil.which("convert"):
+            args = ["convert", str(tmp)]
+            if card.get("crop"):
+                args += ["-crop", card["crop"], "+repage"]
+            args += ["-resize", "640x", "-quality", "76", str(dest)]
+            subprocess.run(args, check=True, capture_output=True)
+            tmp.unlink()
+        else:
+            tmp.replace(dest)
+        print(f"synced {card['image']} from {source}")
+    except Exception as exc:  # noqa: BLE001 - never fail the build over an image
+        print(f"warning: keeping committed {card['image']}: {exc}", file=sys.stderr)
 
 
 def pct(seconds, total):
@@ -218,6 +273,9 @@ def card_svg(index, card, x, y, w, h, count):
 
 def build(user):
     cards = json.loads((PROJECTS / "projects.json").read_text())["cards"]
+    for card in cards:
+        if card.get("image"):
+            sync_image(card)
     push = latest_push(user)
 
     if push:

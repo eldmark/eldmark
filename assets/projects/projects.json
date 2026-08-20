@@ -1,5 +1,5 @@
 {
-  "_comment": "Hero carousel cards. Images are committed by hand; the generator never scrapes screenshots. Use 'terminal' instead of 'image' for projects with no UI.",
+  "_comment": "Hero carousel cards. 'source' (owner/repo:path[@ref]) re-downloads the image from the project's own repository on every run; without it the committed file is used as-is. Only point 'source' at images that are already safe to publish.",
   "cards": [
     {
       "id": "portfolio",
@@ -7,6 +7,14 @@
       "tech": "React · Three.js · PostgreSQL",
       "status": "DEPLOYED",
       "image": "portfolio.jpg",
+      "fit": "cover"
+    },
+    {
+      "id": "ecoscan",
+      "title": "ECOSCAN",
+      "tech": "AI · Geodata · Backend",
+      "status": "COMPLETE",
+      "image": "ecoscan.jpg",
       "fit": "cover"
     },
     {
@@ -31,7 +39,8 @@
       "tech": "Rust · CPU Raytracer",
       "status": "ACTIVE",
       "image": "teddyursa.jpg",
-      "fit": "contain"
+      "fit": "contain",
+      "source": "eldmark/teddyursa:render.png"
     }
   ]
 }

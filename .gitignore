@@ -1,2 +1,2 @@
-# Raw screenshots stay local; only the cropped card images are committed.
-assets/projects/Screenshot_*.png
+# Raw screenshots and recordings stay local; only cropped card images (.jpg) are committed.
+assets/projects/*.png
