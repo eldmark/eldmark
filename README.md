@@ -143,7 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `6b7714c` chore: update README (latest commit)
+- Working on **eldmark/eldmark** (main) — `c05d810` feat(hero): sync card images from project repos, add EcoScan card
 <!-- CURRENTLY_WORKING_END -->
 
 ---
