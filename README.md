@@ -143,7 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `7f74d44` feat(hero): lead with the active repository, discover card images by convention
+- Working on **eldmark/eldmark** (main) — `c4ff4a2` chore: update README (latest commit)
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -151,11 +151,11 @@ Fundamentals, kept because they still hold up.
 ## Recent development
 
 <!-- LATEST_COMMIT_START -->
+- **[gba_raycaster](https://github.com/eldmark/gba_raycaster)** · `02dedcb` — Add a boss, a sealed vault, sound, and mouse and gamepad support _(2026-08-21)_
+- **[gba_raycaster](https://github.com/eldmark/gba_raycaster)** · `70bda9b` — Make guardians see walls and walk around them _(2026-08-20)_
+- **[eldmark](https://github.com/eldmark/eldmark)** · `c05d810` — feat(hero): sync card images from project repos, add EcoScan card _(2026-08-20)_
+- **[eldmark](https://github.com/eldmark/eldmark)** · `7f74d44` — feat(hero): lead with the active repository, discover card images by convention _(2026-08-20)_
 - **[eldmark](https://github.com/eldmark/eldmark)** · `b712dff` — feat(hero): real screenshots for e-commerce and barber shop cards _(2026-08-19)_
-- **[eldmark](https://github.com/eldmark/eldmark)** · `0a19322` — feat(hero): animated CRT terminal panel with live status _(2026-08-19)_
-- **[eldmark](https://github.com/eldmark/eldmark)** · `887f6df` — feat (Snake): added recent-activity and snake game _(2026-08-19)_
-- **[teddyursa](https://github.com/eldmark/teddyursa)** · `4b9a036` — docs: add README covering usage, layout and the sphere layering model _(2026-08-14)_
-- **[Scholarship-Hours](https://github.com/eldmark/Scholarship-Hours)** · `3a0abbe` — docs(readme): Update configuration files and improve README instructions _(2026-08-12)_
 <!-- LATEST_COMMIT_END -->
 
 ---
