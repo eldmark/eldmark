@@ -176,8 +176,17 @@ Fundamentals, kept because they still hold up.
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=eldmark&theme=tokyonight&no-frame=true&no-bg=true&column=6&margin-w=8&title=MultiLanguage,Repositories,Commits,Experience,PullRequest,Stars" alt="GitHub trophies" />
+  <img src="https://streak-stats.demolab.com?user=eldmark&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="Contribution streak: current streak, longest streak and total contributions" height="165" />
 </p>
+
+<!-- Trophies: the public instance at github-profile-trophy.vercel.app returns
+     HTTP 402 DEPLOYMENT_DISABLED. Re-enable by deploying a fork of
+     ryo-ma/github-profile-trophy and swapping the host below. -->
+<!--
+<p align="center">
+  <img src="https://YOUR-TROPHY-DEPLOYMENT.vercel.app/?username=eldmark&theme=tokyonight&no-frame=true&no-bg=true&column=6&margin-w=8&title=MultiLanguage,Repositories,Commits,Experience,PullRequest,Stars" alt="GitHub trophies" />
+</p>
+-->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/eldmark/eldmark/output/github-snake-dark.svg" />
