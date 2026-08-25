@@ -143,7 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `23b1cff` chore: update README (latest commit)
+- Working on **eldmark/eldmark** (main) — `0438282` fix(readme): restore streak card, disable dead trophy widget
 <!-- CURRENTLY_WORKING_END -->
 
 ---
