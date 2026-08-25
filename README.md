@@ -143,7 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `ddac857` chore: update README (latest commit)
+- Working on **eldmark/eldmark** (main) — `23b1cff` chore: update README (latest commit)
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -151,11 +151,11 @@ Fundamentals, kept because they still hold up.
 ## Recent development
 
 <!-- LATEST_COMMIT_START -->
+- **[gba_raycaster](https://github.com/eldmark/gba_raycaster)** · `c7636da` — fix(docs): updated readme _(2026-08-24)_
 - **[gba_raycaster](https://github.com/eldmark/gba_raycaster)** · `3b99d64` — Fix the cartridge build failing on a fresh clone _(2026-08-23)_
 - **[gba_raycaster](https://github.com/eldmark/gba_raycaster)** · `bd64084` — Make the installer survive Arch and a missing emulator package _(2026-08-23)_
 - **[gba_raycaster](https://github.com/eldmark/gba_raycaster)** · `d3e123f` — Rewrite the README: how the engine was built, and drop the dashes _(2026-08-23)_
 - **[gba_raycaster](https://github.com/eldmark/gba_raycaster)** · `ad2bbbf` — Link the demo video from the title screenshot _(2026-08-23)_
-- **[gba_raycaster](https://github.com/eldmark/gba_raycaster)** · `2d26470` — Point the README at the released ROM _(2026-08-23)_
 <!-- LATEST_COMMIT_END -->
 
 ---
