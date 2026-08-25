@@ -143,7 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `0438282` fix(readme): restore streak card, disable dead trophy widget
+- Working on **eldmark/eldmark** (main) — `f00ebec` fix(readme): point trophies at a self-hosted deployment
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -151,11 +151,11 @@ Fundamentals, kept because they still hold up.
 ## Recent development
 
 <!-- LATEST_COMMIT_START -->
+- **[github-profile-trophy](https://github.com/eldmark/github-profile-trophy)** · `90388f5` — fix: resolve dotenv import under the vercel-deno runtime _(2026-08-25)_
+- **[github-profile-trophy](https://github.com/eldmark/github-profile-trophy)** · `c06ebdf` — fix: log the raw GitHub response when it cannot be interpreted _(2026-08-25)_
+- **[eldmark](https://github.com/eldmark/eldmark)** · `0438282` — fix(readme): restore streak card, disable dead trophy widget _(2026-08-25)_
 - **[gba_raycaster](https://github.com/eldmark/gba_raycaster)** · `c7636da` — fix(docs): updated readme _(2026-08-24)_
 - **[gba_raycaster](https://github.com/eldmark/gba_raycaster)** · `3b99d64` — Fix the cartridge build failing on a fresh clone _(2026-08-23)_
-- **[gba_raycaster](https://github.com/eldmark/gba_raycaster)** · `bd64084` — Make the installer survive Arch and a missing emulator package _(2026-08-23)_
-- **[gba_raycaster](https://github.com/eldmark/gba_raycaster)** · `d3e123f` — Rewrite the README: how the engine was built, and drop the dashes _(2026-08-23)_
-- **[gba_raycaster](https://github.com/eldmark/gba_raycaster)** · `ad2bbbf` — Link the demo video from the title screenshot _(2026-08-23)_
 <!-- LATEST_COMMIT_END -->
 
 ---
