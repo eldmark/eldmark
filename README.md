@@ -143,7 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `d3b0f4c` chore: update README (latest commit)
+- Working on **eldmark/eldmark** (main) — `93c8f66` chore: update README (latest commit)
 <!-- CURRENTLY_WORKING_END -->
 
 ---
