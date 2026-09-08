@@ -143,7 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `dc10c99` chore: update README (latest commit)
+- Working on **eldmark/eldmark** (main) — `e9dd5b8` chore: update README (latest commit)
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -151,11 +151,11 @@ Fundamentals, kept because they still hold up.
 ## Recent development
 
 <!-- LATEST_COMMIT_START -->
+- **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `41d9bd9` — Add a title screen, and stop Escape and the inventory from stealing the mouse _(2026-09-07)_
+- **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `df036a5` — Add a spyglass slot that cycles the resolution scale _(2026-09-07)_
+- **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `2d639aa` — Add a Minecraft hotbar as the menu, and turn the arrows the right way up _(2026-09-07)_
 - **[eldmark](https://github.com/eldmark/eldmark)** · `f00ebec` — fix(readme): point trophies at a self-hosted deployment _(2026-08-25)_
 - **[github-profile-trophy](https://github.com/eldmark/github-profile-trophy)** · `90388f5` — fix: resolve dotenv import under the vercel-deno runtime _(2026-08-25)_
-- **[github-profile-trophy](https://github.com/eldmark/github-profile-trophy)** · `c06ebdf` — fix: log the raw GitHub response when it cannot be interpreted _(2026-08-25)_
-- **[eldmark](https://github.com/eldmark/eldmark)** · `0438282` — fix(readme): restore streak card, disable dead trophy widget _(2026-08-25)_
-- **[gba_raycaster](https://github.com/eldmark/gba_raycaster)** · `c7636da` — fix(docs): updated readme _(2026-08-24)_
 <!-- LATEST_COMMIT_END -->
 
 ---
