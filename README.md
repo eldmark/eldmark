@@ -143,7 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `e9dd5b8` chore: update README (latest commit)
+- Working on **eldmark/eldmark** (main) — `3de5c50` chore: update README (latest commit)
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -151,11 +151,11 @@ Fundamentals, kept because they still hold up.
 ## Recent development
 
 <!-- LATEST_COMMIT_START -->
+- **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `60d947a` — Fix fences losing arms, windows showing sky, and the void behind leaves _(2026-09-08)_
+- **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `bd2b76a` — Stop the title buttons from moving, and answer the mouse while loading _(2026-09-08)_
+- **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `c386ffe` — Commit the 92 textures the program uses so the repo runs on its own _(2026-09-08)_
 - **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `41d9bd9` — Add a title screen, and stop Escape and the inventory from stealing the mouse _(2026-09-07)_
 - **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `df036a5` — Add a spyglass slot that cycles the resolution scale _(2026-09-07)_
-- **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `2d639aa` — Add a Minecraft hotbar as the menu, and turn the arrows the right way up _(2026-09-07)_
-- **[eldmark](https://github.com/eldmark/eldmark)** · `f00ebec` — fix(readme): point trophies at a self-hosted deployment _(2026-08-25)_
-- **[github-profile-trophy](https://github.com/eldmark/github-profile-trophy)** · `90388f5` — fix: resolve dotenv import under the vercel-deno runtime _(2026-08-25)_
 <!-- LATEST_COMMIT_END -->
 
 ---
