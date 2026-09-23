@@ -143,7 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `98c6c61` chore: update README (latest commit)
+- Working on **eldmark/eldmark** (main) — `fce49d8` chore: update README (latest commit)
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -151,11 +151,11 @@ Fundamentals, kept because they still hold up.
 ## Recent development
 
 <!-- LATEST_COMMIT_START -->
-- **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `6257e05` — Group the source by function instead of one flat folder of 24 files _(2026-09-08)_
-- **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `ad984fc` — Document the architecture and the ray tracer in the README _(2026-09-08)_
-- **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `60d947a` — Fix fences losing arms, windows showing sky, and the void behind leaves _(2026-09-08)_
-- **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `bd2b76a` — Stop the title buttons from moving, and answer the mouse while loading _(2026-09-08)_
-- **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `c386ffe` — Commit the 92 textures the program uses so the repo runs on its own _(2026-09-08)_
+- **[crud](https://github.com/eldmark/crud)** · `bdad2d0` — feat: report a view whose script block never ran _(2026-09-22)_
+- **[crud](https://github.com/eldmark/crud)** · `d2f3648` — feat: report a Vue component the page never mounted _(2026-09-22)_
+- **[crud](https://github.com/eldmark/crud)** · `b3a7edf` — feat: report a view whose script block never ran _(2026-09-22)_
+- **[crud](https://github.com/eldmark/crud)** · `86072ac` — feat: report a view whose script block never ran _(2026-09-22)_
+- **[crud](https://github.com/eldmark/crud)** · `94dc8cc` — feat: report a view whose script block never ran _(2026-09-22)_
 <!-- LATEST_COMMIT_END -->
 
 ---
