@@ -143,7 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `9c30859` chore: update README (latest commit)
+- Working on **eldmark/eldmark** (main) — `b11f3fe` chore: update README (latest commit)
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -151,11 +151,11 @@ Fundamentals, kept because they still hold up.
 ## Recent development
 
 <!-- LATEST_COMMIT_START -->
+- **[crew-mcp](https://github.com/eldmark/crew-mcp)** · `8d1e62a` — feat(policy): add optional server-side policy seam for dispatch and merge _(2026-09-25)_
+- **[crew-mcp](https://github.com/eldmark/crew-mcp)** · `067b1fb` — docs: record T0 upstream baseline on the BrainBox host _(2026-09-25)_
 - **[crud](https://github.com/eldmark/crud)** · `bdad2d0` — feat: report a view whose script block never ran _(2026-09-22)_
 - **[crud](https://github.com/eldmark/crud)** · `d2f3648` — feat: report a Vue component the page never mounted _(2026-09-22)_
 - **[crud](https://github.com/eldmark/crud)** · `b3a7edf` — feat: report a view whose script block never ran _(2026-09-22)_
-- **[crud](https://github.com/eldmark/crud)** · `86072ac` — feat: report a view whose script block never ran _(2026-09-22)_
-- **[crud](https://github.com/eldmark/crud)** · `94dc8cc` — feat: report a view whose script block never ran _(2026-09-22)_
 <!-- LATEST_COMMIT_END -->
 
 ---
