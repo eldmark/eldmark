@@ -143,7 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `109ac59` chore: update README (latest commit)
+- Working on **eldmark/eldmark** (main) — `e5376b7` chore: update README (latest commit)
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -151,11 +151,11 @@ Fundamentals, kept because they still hold up.
 ## Recent development
 
 <!-- LATEST_COMMIT_START -->
+- **[hermes-presentation](https://github.com/eldmark/hermes-presentation)** · `ebfb1bc` — README del proyecto _(2026-10-09)_
+- **[hermes-presentation](https://github.com/eldmark/hermes-presentation)** · `1bf8f5f` — Las 10 escenas 3D con placeholders y la actividad con marcador de mesas variable _(2026-10-08)_
 - **[hermes-presentation](https://github.com/eldmark/hermes-presentation)** · `296048d` — Núcleo de navegación, guion en datos, componentes reutilizables, overlay y página de guion _(2026-10-08)_
 - **[hermes-presentation](https://github.com/eldmark/hermes-presentation)** · `1daa477` — Escenas 1, 3, 9 y 10: encuadres sobre el recuadro de texto, mapa de Zeus x1,7 y vista cenital de la mesa completa _(2026-10-09)_
 - **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `24a1698` — Fix typo in video link text _(2026-09-28)_
-- **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `7a7699d` — Fix link formatting in README.md _(2026-09-28)_
-- **[minecraft_skyblock](https://github.com/eldmark/minecraft_skyblock)** · `df48752` — Add video link to README _(2026-09-28)_
 <!-- LATEST_COMMIT_END -->
 
 ---
