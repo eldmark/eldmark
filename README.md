@@ -143,7 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `75d5267` chore: update README (latest commit)
+- Working on **eldmark/eldmark** (main) — `bb9cfa5` chore: update README (latest commit)
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -151,10 +151,7 @@ Fundamentals, kept because they still hold up.
 ## Recent development
 
 <!-- LATEST_COMMIT_START -->
-- **[hermes-presentation](https://github.com/eldmark/hermes-presentation)** · `ebfb1bc` — README del proyecto _(2026-10-09)_
-- **[hermes-presentation](https://github.com/eldmark/hermes-presentation)** · `1bf8f5f` — Las 10 escenas 3D con placeholders y la actividad con marcador de mesas variable _(2026-10-08)_
-- **[hermes-presentation](https://github.com/eldmark/hermes-presentation)** · `296048d` — Núcleo de navegación, guion en datos, componentes reutilizables, overlay y página de guion _(2026-10-08)_
-- **[hermes-presentation](https://github.com/eldmark/hermes-presentation)** · `1daa477` — Escenas 1, 3, 9 y 10: encuadres sobre el recuadro de texto, mapa de Zeus x1,7 y vista cenital de la mesa completa _(2026-10-09)_
+- **[career-agent-mcp](https://github.com/eldmark/career-agent-mcp)** · `51d6e27` — feat: add automatic CV track matching, PDF hyperlinking and match-and-log CLI _(2026-10-19)_
 <!-- LATEST_COMMIT_END -->
 
 ---
