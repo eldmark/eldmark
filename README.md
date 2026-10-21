@@ -143,7 +143,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `bb9cfa5` chore: update README (latest commit)
+- Working on **eldmark/eldmark** (main) — `1f426e7` chore: update README (latest commit)
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -151,6 +151,8 @@ Fundamentals, kept because they still hold up.
 ## Recent development
 
 <!-- LATEST_COMMIT_START -->
+- **[career-agent-mcp](https://github.com/eldmark/career-agent-mcp)** · `53f7639` — fix(lint): allow explicit profile_path in lint.run for example profile testing _(2026-10-20)_
+- **[career-agent-mcp](https://github.com/eldmark/career-agent-mcp)** · `188b2c1` — feat: add application tracking tool (Excel & CSV) with status and salary _(2026-10-19)_
 - **[career-agent-mcp](https://github.com/eldmark/career-agent-mcp)** · `51d6e27` — feat: add automatic CV track matching, PDF hyperlinking and match-and-log CLI _(2026-10-19)_
 <!-- LATEST_COMMIT_END -->
 
