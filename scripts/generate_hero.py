@@ -39,6 +39,9 @@ FG = "#c0caf5"
 GREEN = "#9ece6a"
 TAGLINE = "> turning ideas into systems"
 
+# What this run changed, so the commit message can say what the images show.
+CHANGES = {"images": [], "lead": None}
+
 
 def gh(path):
     out = subprocess.run(["gh", "api", path], capture_output=True, text=True, check=False)
@@ -140,6 +143,7 @@ def sync_image(card):
         if not url:
             raise RuntimeError(f"no download_url for {source}")
 
+        before = dest.read_bytes() if dest.exists() else b""
         tmp = dest.with_suffix(dest.suffix + ".tmp")
         with urllib.request.urlopen(url, timeout=30) as response:
             tmp.write_bytes(response.read())
@@ -155,6 +159,8 @@ def sync_image(card):
         else:
             tmp.replace(dest)
         print(f"synced {card['image']} from {source}")
+        if dest.read_bytes() != before:
+            CHANGES["images"].append(card["id"])
     except Exception as exc:  # noqa: BLE001 - never fail the build over an image
         print(f"warning: keeping committed {card['image']}: {exc}", file=sys.stderr)
 
@@ -311,6 +317,7 @@ def build(user):
 
     if push:
         cards = lead_with(cards, push[0])
+        CHANGES["lead"] = cards[0]["id"]
 
     for card in cards:
         if card.get("image"):
@@ -336,7 +343,7 @@ def build(user):
         f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" '
         f'width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
         f'aria-label="Terminal panel: Marco Diaz, Software Engineer. Backend, AI and Systems. '
-        f'Rotating showcase of four projects.">',
+        f'Rotating showcase of {len(cards)} projects.">',
         "<defs>",
         f"<style>{build_css(cards)}</style>",
         '<pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">'
@@ -425,9 +432,37 @@ def build(user):
     return "\n".join(out)
 
 
+def _pretty(title):
+    return title.title().replace("Mcp", "MCP").replace("E-Commerce", "E-Commerce")
+
+
+def projects_block(cards):
+    """Markdown table for the README, in the same order as the carousel."""
+    rows = ["| # | Project | Stack | Status |", "| - | ------- | ----- | ------ |"]
+    for i, c in enumerate(cards, 1):
+        name = f"[{_pretty(c['title'])}]({c['url']})" if c.get("url") else _pretty(c["title"])
+        rows.append(f"| {i:02d} | {name} — {c['blurb']} | {c['tech']} | {c['status']} |")
+    return "\n".join(rows)
+
+
+def commit_message():
+    """Describe the visible change: lead card, refreshed images."""
+    parts = []
+    if CHANGES["images"]:
+        parts.append("refresh " + ", ".join(CHANGES["images"]) + " card")
+    if CHANGES["lead"]:
+        parts.append(f"lead with {CHANGES['lead']}")
+    return "chore(profile): " + ("; ".join(parts) if parts else "sync status panel")
+
+
 if __name__ == "__main__":
     user = sys.argv[1] if len(sys.argv) > 1 else "eldmark"
     dest = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "assets" / "generated" / "hero.svg"
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(build(user))
+    cards = json.loads((PROJECTS / "projects.json").read_text())["cards"]
+    if CHANGES["lead"]:
+        cards = lead_with(cards, next(c["repo"].split("/")[-1] for c in cards if c["id"] == CHANGES["lead"]))
+    (ROOT / ".profile-projects.md").write_text(projects_block(cards))
+    (ROOT / ".commit-message").write_text(commit_message())
     print(f"wrote {dest} ({dest.stat().st_size // 1024} KB)")

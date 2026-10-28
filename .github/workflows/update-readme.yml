@@ -18,6 +18,7 @@ jobs:
     # Skip when the commit was made by the bot itself to avoid infinite loops.
     if: >
       github.actor != 'github-actions[bot]' &&
+      !startsWith(github.event.head_commit.message, 'chore(profile):') &&
       !startsWith(github.event.head_commit.message, 'chore: update README')
 
     steps:
@@ -65,14 +66,18 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/generate_hero.py "${{ github.repository_owner }}"
 
+      # Same manifest as the carousel, so the table and the images cannot drift.
+      - name: Update PROJECTS block
+        run: bash scripts/update-readme-blocks.sh README.md PROJECTS "$(cat .profile-projects.md)"
+
       - name: Commit changes if any
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md assets/generated/hero.svg
+          git add README.md assets/generated/hero.svg assets/projects/*.jpg
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore: update README (latest commit)"
+            git commit -m "$(cat .commit-message)"
             git push
           fi

@@ -18,7 +18,7 @@
 
 Software Engineer at **Softlogic S.A.** and Computer Science student at **Universidad del Valle de Guatemala**.
 
-I build full-stack products and the backend architecture behind them: service layers, REST APIs, relational data models, and AI integrations exposed as tool-enabled services (MCP). Most of my work is about keeping systems maintainable as they grow — decoupling integrations, removing duplicated business logic, and making infrastructure something the team stops thinking about.
+I build full-stack products and the backend architecture behind them: service layers, REST APIs, relational data models, and AI systems exposed as tool-enabled services. That includes custom Model Context Protocol (MCP) servers with hybrid semantic search (dense embeddings + BM25 on SQLite) and an AI gateway that cut LLM token usage by 30% in production. Most of my work is about keeping systems maintainable as they grow — decoupling integrations, removing duplicated business logic, and making infrastructure something the team stops thinking about.
 
 ---
 
@@ -41,7 +41,7 @@ I build full-stack products and the backend architecture behind them: service la
 
 **Languages**
 
-[![Languages](https://skillicons.dev/icons?i=ts,python,java,kotlin,cpp,php&theme=dark)](https://skillicons.dev)
+[![Languages](https://skillicons.dev/icons?i=ts,python,rust,java,kotlin,cpp,go,php&theme=dark)](https://skillicons.dev)
 
 **Backend**
 
@@ -59,15 +59,29 @@ I build full-stack products and the backend architecture behind them: service la
 
 [![Infrastructure](https://skillicons.dev/icons?i=docker,githubactions,gcp,cloudflare,linux,git&theme=dark)](https://skillicons.dev)
 
-**AI & Architecture** — LLM integration · Agentic AI · Model Context Protocol (MCP) · Microservices · REST · OAuth2 · RBAC · JWT · Layered architecture
+**AI & Architecture** — LLM integration · Agentic AI · Model Context Protocol (MCP) · Hybrid search (embeddings + BM25) · JSON Schema validation · Microservices · REST · OAuth2 · RBAC · JWT · Layered architecture
 
 ---
 
 ## Featured Projects
 
+<!-- PROJECTS_START -->
+| # | Project | Stack | Status |
+| - | ------- | ----- | ------ |
+| 01 | [Interactive Portfolio](https://github.com/eldmark/game-portafolio) — Explorable 3D room + Recruiter Mode | React · Three.js · PostgreSQL | DEPLOYED |
+| 02 | [Career Agent MCP](https://github.com/eldmark/career-agent-mcp) — MCP server for job search, ATS audit and CV compilation | Python · MCP · LaTeX · ATS | ACTIVE |
+| 03 | [Ecoscan](https://github.com/eldmark/backend-ecoscan) — LLM waste classification to geodata | AI · Geodata · Backend | COMPLETE |
+| 04 | [Bodega De Licores](https://bodegadelicores.app/) — E-commerce with CRM, analytics and AI assistant | Vue · Express · PostgreSQL · Grafana | DEPLOYED |
+| 05 | [Skyblock Raytracer](https://github.com/eldmark/minecraft_skyblock) — Voxel diorama rendered fully on CPU, 8.11x on 16 threads | Rust · CPU Raytracing · Multithreading | COMPLETE |
+| 06 | [Barber Shop Platform](https://github.com/eldmark/db_barbershop) — Appointments, sales, analytics | Bun · Elysia · PostgreSQL | COMPLETE |
+| 07 | [Teddiursa Raytracer](https://github.com/eldmark/teddyursa) — Rust CPU raytracer | Rust · CPU Raytracer | ACTIVE |
+<!-- PROJECTS_END -->
+
+_The table and the animated panel above are generated from one manifest (`assets/projects/projects.json`); card images are pulled from each project's own repository._
+
 ### [Interactive Developer Portfolio](https://github.com/eldmark/game-portafolio) · [marcodiaz.me](https://marcodiaz.me)
 
-An explorable 3D room where each object opens a real section of the portfolio — plus a **Recruiter Mode**, a linear route for people who want the proof of work without the game.
+An explorable 3D room where each object opens a real section of the portfolio — plus a **Recruiter Mode**, a linear route that cut review time by ~60%.
 
 **Problem it solves:** an immersive portfolio normally costs a recruiter time. Two front doors over one dataset means neither audience is compromised.
 
@@ -75,13 +89,31 @@ An explorable 3D room where each object opens a real section of the portfolio �
 
 ---
 
-### Enterprise E-Commerce Platform — _private_
+### [Bodega de Licores](https://bodegadelicores.app/) — E-Commerce, CRM and Analytics
 
-Inventory, promotions, orders, and reservations for a commercial operation.
+Production commerce platform for a liquor retailer in Quetzaltenango: catalog, orders, reservations, inventory, customer relationships, and business reporting in one system.
 
-**Problem it solves:** manual back-office work that did not scale with the catalog.
+**Problem it solves:** manual back-office work that did not scale with the catalog, and decisions made without knowing what customers search for, abandon, or buy when.
 
-**What it demonstrates:** modular design sized for business growth; scheduled jobs automating reservation lifecycle and auditing; external integrations for enterprise auth (Clerk + RBAC) and distributed storage (Cloudflare R2); containerized delivery through Docker and GitHub Container Registry.
+**What it demonstrates:** an e-commerce core (orders, reservations, promotions, multi-branch inventory with a trigger-written stock history) alongside a CRM layer (client profiles, consent tracking, marketing campaigns, privacy requests and retention); six Grafana dashboards (sales, inventory, demand, seasonality) plus Umami web analytics served same-origin; an AI assistant and recommender, including a WhatsApp channel; catalog sync with an external ERP; scheduled jobs for reservation expiry, backups, and email outbox; Clerk auth with RBAC, Cloudflare R2 storage, and Docker + GHCR delivery.
+
+---
+
+### [Career Agent MCP](https://github.com/eldmark/career-agent-mcp)
+
+MCP server that automates job search, ATS auditing, and one-page LaTeX CV compilation.
+
+**Problem it solves:** tailoring a CV per role by hand is slow and invites claims that are not true.
+
+**What it demonstrates:** tool-enabled MCP design; a facts file that acts as the only source of verifiable claims, with a linter that flags unverified numbers; indirect prompt-injection sanitizing for scraped job posts; application tracking with status and follow-ups.
+
+---
+
+### [SkyBlock CPU Raytracer](https://github.com/eldmark/minecraft_skyblock) — Rust
+
+A Minecraft-style floating-island diorama rendered entirely on the CPU: no OpenGL, no shaders, no GPU.
+
+**What it demonstrates:** a hand-written engine (vector math, PNG/DEFLATE codec, Perlin/fBm noise, voxel DDA traversal, multithreaded scheduler); frame time cut from **92.94 ms to 18.01 ms** by skipping shadow rays on faces turned away from the light; **8.11x** scaling from 1 to 16 threads.
 
 ---
 
@@ -118,7 +150,7 @@ Fundamentals, kept because they still hold up.
 **Full Stack Developer** — Softlogic S.A. · _Jun 2026 – Present_
 
 - Redesigned inter-service communication through a centralized service layer, reducing duplicated integrations.
-- Built an AI integration microservice that cut token consumption by **~30%** through request optimization.
+- Launched an AI gateway microservice that cut LLM token consumption by **30%** in production, using semantic prompt caching and strict JSON Schema validation.
 - Integrated multiple external payment providers into the mobile platform using a loosely coupled architecture.
 
 **Backend Developer** — Freelance / Contract · _Jan 2026 – Present_
@@ -128,7 +160,7 @@ Fundamentals, kept because they still hold up.
 
 **Teaching Assistant** — Universidad del Valle de Guatemala · _Jan 2026 – Jun 2026_
 
-- Mentored students in algorithms, concurrent programming, and software engineering principles.
+- Mentored 40+ students per week in algorithms, concurrent programming, and software engineering principles.
 - Evaluated solutions on algorithmic complexity and long-term maintainability.
 
 ---

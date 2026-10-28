@@ -1,5 +1,5 @@
 {
-  "_comment": "Hero carousel cards. 'repo' ties a card to a repository: the one pushed to most recently leads the carousel. 'source' refreshes the image each run - either owner/repo:path[@ref], or \"auto\" to use an image the project publishes at one of CARD_PATHS. Without 'source' the committed file is used as-is. Only publish images that are already safe to show.",
+  "_comment": "Hero carousel cards. 'repo' ties a card to a repository: the one pushed to most recently leads the carousel. 'source' refreshes the image each run - either owner/repo:path[@ref], or \"auto\" to use an image the project publishes at one of CARD_PATHS. Without 'source' the committed file is used as-is. Only publish images that are already safe to show. 'url' and 'blurb' feed the generated PROJECTS block in the README, so README and carousel share one source.",
   "cards": [
     {
       "id": "portfolio",
@@ -9,7 +9,26 @@
       "image": "portfolio.jpg",
       "fit": "cover",
       "repo": "eldmark/game-portafolio",
-      "source": "auto"
+      "source": "auto",
+      "url": "https://github.com/eldmark/game-portafolio",
+      "blurb": "Explorable 3D room + Recruiter Mode"
+    },
+    {
+      "id": "career-agent",
+      "title": "CAREER AGENT MCP",
+      "tech": "Python · MCP · LaTeX · ATS",
+      "status": "ACTIVE",
+      "repo": "eldmark/career-agent-mcp",
+      "url": "https://github.com/eldmark/career-agent-mcp",
+      "blurb": "MCP server for job search, ATS audit and CV compilation",
+      "terminal": [
+        "$ career-agent match --url <job>",
+        "  track    04_ai_software_engineer",
+        "  ats_fit  keywords verified vs profile.yaml",
+        "$ career-agent compile --lint",
+        "  200 OK   1-page PDF, hyperlinks intact",
+        "$ career-agent log --status applied"
+      ]
     },
     {
       "id": "ecoscan",
@@ -19,15 +38,31 @@
       "image": "ecoscan.jpg",
       "fit": "cover",
       "repo": "eldmark/backend-ecoscan",
-      "source": "auto"
+      "source": "auto",
+      "url": "https://github.com/eldmark/backend-ecoscan",
+      "blurb": "LLM waste classification to geodata"
     },
     {
       "id": "bodegas",
-      "title": "ENTERPRISE E-COMMERCE",
-      "tech": "Vue · TypeScript · PostgreSQL",
+      "title": "BODEGA DE LICORES",
+      "tech": "Vue · Express · PostgreSQL · Grafana",
       "status": "DEPLOYED",
       "image": "bodegas.jpg",
-      "fit": "cover"
+      "fit": "cover",
+      "blurb": "E-commerce with CRM, analytics and AI assistant",
+      "url": "https://bodegadelicores.app/"
+    },
+    {
+      "id": "skyblock",
+      "title": "SKYBLOCK RAYTRACER",
+      "tech": "Rust · CPU Raytracing · Multithreading",
+      "status": "COMPLETE",
+      "image": "skyblock.jpg",
+      "fit": "cover",
+      "repo": "eldmark/minecraft_skyblock",
+      "source": "eldmark/minecraft_skyblock:screenshots/overview.png",
+      "url": "https://github.com/eldmark/minecraft_skyblock",
+      "blurb": "Voxel diorama rendered fully on CPU, 8.11x on 16 threads"
     },
     {
       "id": "barbershop",
@@ -37,7 +72,9 @@
       "image": "barbershop.jpg",
       "fit": "cover",
       "repo": "eldmark/db_barbershop",
-      "source": "auto"
+      "source": "auto",
+      "url": "https://github.com/eldmark/db_barbershop",
+      "blurb": "Appointments, sales, analytics"
     },
     {
       "id": "teddyursa",
@@ -47,7 +84,9 @@
       "image": "teddyursa.jpg",
       "fit": "contain",
       "source": "eldmark/teddyursa:render.png",
-      "repo": "eldmark/teddyursa"
+      "repo": "eldmark/teddyursa",
+      "url": "https://github.com/eldmark/teddyursa",
+      "blurb": "Rust CPU raytracer"
     }
   ]
 }
