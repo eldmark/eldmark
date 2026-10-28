@@ -433,7 +433,7 @@ def build(user):
 
 
 def _pretty(title):
-    return title.title().replace("Mcp", "MCP").replace("E-Commerce", "E-Commerce")
+    return title.title().replace("Mcp", "MCP").replace(" De ", " de ")
 
 
 def projects_block(cards):

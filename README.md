@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/generated/hero.svg" alt="Marco Díaz — Full-Stack Software Engineer. Backend, AI and Systems. Live status panel and a rotating showcase of four projects." width="940" />
+  <img src="./assets/generated/hero.svg" alt="Marco Díaz — Full-Stack Software Engineer. Backend, AI and Systems. Live status panel and a rotating project showcase." width="940" />
 </p>
 
 <p align="center">
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=eldmark&style=flat&color=7aa2f7&label=profile+views" alt="Profile views" />
+  <b>Production e-commerce + CRM</b> · <b>MCP servers with hybrid search</b> · <b>−30% LLM tokens in production</b>
 </p>
 
 ---
@@ -68,13 +68,13 @@ I build full-stack products and the backend architecture behind them: service la
 <!-- PROJECTS_START -->
 | # | Project | Stack | Status |
 | - | ------- | ----- | ------ |
-| 01 | [Interactive Portfolio](https://github.com/eldmark/game-portafolio) — Explorable 3D room + Recruiter Mode | React · Three.js · PostgreSQL | DEPLOYED |
-| 02 | [Career Agent MCP](https://github.com/eldmark/career-agent-mcp) — MCP server for job search, ATS audit and CV compilation | Python · MCP · LaTeX · ATS | ACTIVE |
-| 03 | [Ecoscan](https://github.com/eldmark/backend-ecoscan) — LLM waste classification to geodata | AI · Geodata · Backend | COMPLETE |
-| 04 | [Bodega De Licores](https://bodegadelicores.app/) — E-commerce with CRM, analytics and AI assistant | Vue · Express · PostgreSQL · Grafana | DEPLOYED |
-| 05 | [Skyblock Raytracer](https://github.com/eldmark/minecraft_skyblock) — Voxel diorama rendered fully on CPU, 8.11x on 16 threads | Rust · CPU Raytracing · Multithreading | COMPLETE |
-| 06 | [Barber Shop Platform](https://github.com/eldmark/db_barbershop) — Appointments, sales, analytics | Bun · Elysia · PostgreSQL | COMPLETE |
-| 07 | [Teddiursa Raytracer](https://github.com/eldmark/teddyursa) — Rust CPU raytracer | Rust · CPU Raytracer | ACTIVE |
+| 01 | [Bodega de Licores](https://bodegadelicores.app/) — E-commerce with CRM, analytics and AI assistant | Vue · Express · PostgreSQL · Grafana | DEPLOYED |
+| 02 | Brain Lab — Private memory layer: chat corpus to verifiable memory, served over MCP | Python · MCP · SQLite · BM25 + Embeddings | ACTIVE |
+| 03 | [Interactive Portfolio](https://github.com/eldmark/game-portafolio) — Explorable 3D room + Recruiter Mode | React · Three.js · PostgreSQL | DEPLOYED |
+| 04 | [Career Agent MCP](https://github.com/eldmark/career-agent-mcp) — MCP server for job search, ATS audit and CV compilation | Python · MCP · LaTeX · ATS | ACTIVE |
+| 05 | [Ecoscan](https://github.com/eldmark/backend-ecoscan) — LLM waste classification to geodata | AI · Geodata · Backend | COMPLETE |
+| 06 | [Skyblock Raytracer](https://github.com/eldmark/minecraft_skyblock) — Voxel diorama rendered fully on CPU, 8.11x on 16 threads | Rust · CPU Raytracing · Multithreading | COMPLETE |
+| 07 | [Barber Shop Platform](https://github.com/eldmark/db_barbershop) — Appointments, sales, analytics | Bun · Elysia · PostgreSQL | COMPLETE |
 <!-- PROJECTS_END -->
 
 _The table and the animated panel above are generated from one manifest (`assets/projects/projects.json`); card images are pulled from each project's own repository._
@@ -99,6 +99,16 @@ Production commerce platform for a liquor retailer in Quetzaltenango: catalog, o
 
 ---
 
+### Brain Lab — _private_
+
+A memory layer for my own AI work: chat exports and agent logs from many providers are normalized into one schema, classified by speaker and source reliability, indexed, and read by agents through an MCP server.
+
+**Problem it solves:** agents forget, and a plain transcript cannot tell what was decided from what was only considered.
+
+**What it demonstrates:** an immutable-evidence pipeline (raw → normalized → classified → derived); hybrid retrieval with dense embeddings and BM25; a SQLite memory store that keeps provenance and human corrections across rebuilds; tool design for MCP clients.
+
+---
+
 ### [Career Agent MCP](https://github.com/eldmark/career-agent-mcp)
 
 MCP server that automates job search, ATS auditing, and one-page LaTeX CV compilation.
@@ -117,31 +127,11 @@ A Minecraft-style floating-island diorama rendered entirely on the CPU: no OpenG
 
 ---
 
-### [Barber Shop Management Platform](https://github.com/eldmark/db_barbershop)
+### More
 
-Appointments, sales, inventory, and business reporting in one system.
-
-**Problem it solves:** decisions made from intuition because operational history was never queryable.
-
-**What it demonstrates:** a data model built for both transactions and historical analysis; analytical queries using CTEs, stored procedures, and triggers; role-based access (admin / employee / client) enforced by guards at the route layer; Bun + ElysiaJS backend with a React + TypeScript frontend.
-
----
-
-### [Trash Detection API](https://github.com/eldmark/backend-ecoscan) — AI + Geodata
-
-Backend that classifies waste from photographs and turns the results into geographic intelligence.
-
-**Problem it solves:** field reports are unstructured images; collection routes need aggregates.
-
-**What it demonstrates:** LLM integration (Claude 3.5 Sonnet) for image analysis behind a REST boundary; pre-aggregated heat maps and GeoJSON routes; Prisma over SQLite/Turso with optional Cloudinary storage — external services kept optional rather than load-bearing.
-
----
-
-### [Lisp Interpreter](https://github.com/eldmark/Proyect-Lisp-interpeter) · [Concurrent Console Game](https://github.com/eldmark/Concurrent-Console-Game)
-
-Fundamentals, kept because they still hold up.
-
-**What they demonstrate:** a language executed end to end — lexer → AST → evaluator → execution context, with recursion and user-defined functions; and a real-time C++ game loop where boss and escort behavior run on independent threads coordinated with mutexes and condition variables.
+- **[Trash Detection API](https://github.com/eldmark/backend-ecoscan)** — Claude image analysis behind a REST boundary, with pre-aggregated heat maps and GeoJSON routes.
+- **[Barber Shop Platform](https://github.com/eldmark/db_barbershop)** — Bun + Elysia + PostgreSQL; analytical queries with CTEs, stored procedures and triggers; role-based guards.
+- **[Lisp Interpreter](https://github.com/eldmark/Proyect-Lisp-interpeter)** · **[Concurrent Console Game](https://github.com/eldmark/Concurrent-Console-Game)** — language runtime end to end, and a multithreaded C++ game loop.
 
 ---
 
@@ -189,23 +179,6 @@ Fundamentals, kept because they still hold up.
 ---
 
 ## GitHub
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=eldmark&theme=tokyonight" alt="GitHub profile summary for eldmark" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=eldmark&theme=tokyonight" alt="Top languages by repository" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=eldmark&theme=tokyonight" alt="Top languages by commit" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=eldmark&theme=tokyonight&utcOffset=-6" alt="Commit activity by hour" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=eldmark&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="Contribution streak: current streak, longest streak and total contributions" height="165" />
-</p>
 
 <p align="center">
   <img src="https://github-profile-trophy-omega-three.vercel.app/?username=eldmark&theme=tokyonight&no-frame=true&no-bg=true&column=6&margin-w=8&title=MultiLanguage,Repositories,Commits,Experience,PullRequest,Stars" alt="GitHub trophies" />

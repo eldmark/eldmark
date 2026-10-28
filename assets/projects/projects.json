@@ -2,6 +2,34 @@
   "_comment": "Hero carousel cards. 'repo' ties a card to a repository: the one pushed to most recently leads the carousel. 'source' refreshes the image each run - either owner/repo:path[@ref], or \"auto\" to use an image the project publishes at one of CARD_PATHS. Without 'source' the committed file is used as-is. Only publish images that are already safe to show. 'url' and 'blurb' feed the generated PROJECTS block in the README, so README and carousel share one source.",
   "cards": [
     {
+      "id": "bodegas",
+      "title": "BODEGA DE LICORES",
+      "tech": "Vue · Express · PostgreSQL · Grafana",
+      "status": "DEPLOYED",
+      "image": "bodegas.jpg",
+      "fit": "cover",
+      "blurb": "E-commerce with CRM, analytics and AI assistant",
+      "url": "https://bodegadelicores.app/"
+    },
+    {
+      "id": "brainlab",
+      "title": "BRAIN LAB",
+      "tech": "Python · MCP · SQLite · BM25 + Embeddings",
+      "status": "ACTIVE",
+      "repo": "eldmark/brain-lab",
+      "blurb": "Private memory layer: chat corpus to verifiable memory, served over MCP",
+      "terminal": [
+        "$ brainlab ingest --providers all",
+        "  normalized  one schema, many providers",
+        "$ brainlab classify --provenance",
+        "  speaker, source reliability, quote",
+        "$ brainlab index",
+        "  200 OK   embeddings + BM25 + memory.sqlite",
+        "$ brainlab serve --mcp",
+        "  tools    search · memory_context · packs"
+      ]
+    },
+    {
       "id": "portfolio",
       "title": "INTERACTIVE PORTFOLIO",
       "tech": "React · Three.js · PostgreSQL",
@@ -43,16 +71,6 @@
       "blurb": "LLM waste classification to geodata"
     },
     {
-      "id": "bodegas",
-      "title": "BODEGA DE LICORES",
-      "tech": "Vue · Express · PostgreSQL · Grafana",
-      "status": "DEPLOYED",
-      "image": "bodegas.jpg",
-      "fit": "cover",
-      "blurb": "E-commerce with CRM, analytics and AI assistant",
-      "url": "https://bodegadelicores.app/"
-    },
-    {
       "id": "skyblock",
       "title": "SKYBLOCK RAYTRACER",
       "tech": "Rust · CPU Raytracing · Multithreading",
@@ -75,18 +93,6 @@
       "source": "auto",
       "url": "https://github.com/eldmark/db_barbershop",
       "blurb": "Appointments, sales, analytics"
-    },
-    {
-      "id": "teddyursa",
-      "title": "TEDDIURSA RAYTRACER",
-      "tech": "Rust · CPU Raytracer",
-      "status": "ACTIVE",
-      "image": "teddyursa.jpg",
-      "fit": "contain",
-      "source": "eldmark/teddyursa:render.png",
-      "repo": "eldmark/teddyursa",
-      "url": "https://github.com/eldmark/teddyursa",
-      "blurb": "Rust CPU raytracer"
     }
   ]
 }
