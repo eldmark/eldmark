@@ -175,7 +175,7 @@ Fundamentals, kept because they still hold up.
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `12a54fb` chore: update README (latest commit)
+- Working on **eldmark/eldmark** (main) — `5b9e203` feat(profile): align README with CV and sync carousel from one manifest
 <!-- CURRENTLY_WORKING_END -->
 
 ---
