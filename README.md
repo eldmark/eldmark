@@ -165,7 +165,7 @@ A Minecraft-style floating-island diorama rendered entirely on the CPU: no OpenG
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `5b9e203` feat(profile): align README with CV and sync carousel from one manifest
+- Working on **eldmark/eldmark** (main) — `dfcc7f1` feat(profile): lead with Bodega de Licores and Brain Lab, trim README
 <!-- CURRENTLY_WORKING_END -->
 
 ---
