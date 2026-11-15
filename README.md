@@ -165,7 +165,7 @@ A Minecraft-style floating-island diorama rendered entirely on the CPU: no OpenG
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `5c28420` chore(profile): sync status panel
+- Working on **eldmark/eldmark** (main) — `cee24d8` chore(profile): lead with barbershop
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -173,9 +173,8 @@ A Minecraft-style floating-island diorama rendered entirely on the CPU: no OpenG
 ## Recent development
 
 <!-- LATEST_COMMIT_START -->
+- **[galaxy](https://github.com/eldmark/galaxy)** · `bdf3799` — Permite aterrizar y explorar Siroco _(2026-11-11)_
 - **[filmcraft](https://github.com/eldmark/filmcraft)** · `f4090d7` — Docs: fix Ultra Key article in the monitor eyedropper comment (#4585) _(2026-11-09)_
-- **[final-presentation](https://github.com/eldmark/final-presentation)** · `cb1bfe0` — web: campañas de marketing, stack antes de Valor e impacto, festividades en otro monitor, ataque con gráfica de GCP, Umami de septiembre y demo nueva _(2026-11-03)_
-- **[final-presentation](https://github.com/eldmark/final-presentation)** · `49d8726` — presentation modifications _(2026-11-03)_
 <!-- LATEST_COMMIT_END -->
 
 ---
