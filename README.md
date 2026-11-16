@@ -68,13 +68,13 @@ I build full-stack products and the backend architecture behind them: service la
 <!-- PROJECTS_START -->
 | # | Project | Stack | Status |
 | - | ------- | ----- | ------ |
-| 01 | [Barber Shop Platform](https://github.com/eldmark/db_barbershop) — Appointments, sales, analytics | Bun · Elysia · PostgreSQL | COMPLETE |
-| 02 | [Bodega de Licores](https://bodegadelicores.app/) — E-commerce with CRM, analytics and AI assistant | Vue · Express · PostgreSQL · Grafana | DEPLOYED |
-| 03 | Brain Lab — Private memory layer: chat corpus to verifiable memory, served over MCP | Python · MCP · SQLite · BM25 + Embeddings | ACTIVE |
-| 04 | [Interactive Portfolio](https://github.com/eldmark/game-portafolio) — Explorable 3D room + Recruiter Mode | React · Three.js · PostgreSQL | DEPLOYED |
-| 05 | [Career Agent MCP](https://github.com/eldmark/career-agent-mcp) — MCP server for job search, ATS audit and CV compilation | Python · MCP · LaTeX · ATS | ACTIVE |
-| 06 | [Ecoscan](https://github.com/eldmark/backend-ecoscan) — LLM waste classification to geodata | AI · Geodata · Backend | COMPLETE |
-| 07 | [Skyblock Raytracer](https://github.com/eldmark/minecraft_skyblock) — Voxel diorama rendered fully on CPU, 8.11x on 16 threads | Rust · CPU Raytracing · Multithreading | COMPLETE |
+| 01 | [Bodega de Licores](https://bodegadelicores.app/) — E-commerce with CRM, analytics and AI assistant | Vue · Express · PostgreSQL · Grafana | DEPLOYED |
+| 02 | Brain Lab — Private memory layer: chat corpus to verifiable memory, served over MCP | Python · MCP · SQLite · BM25 + Embeddings | ACTIVE |
+| 03 | [Interactive Portfolio](https://github.com/eldmark/game-portafolio) — Explorable 3D room + Recruiter Mode | React · Three.js · PostgreSQL | DEPLOYED |
+| 04 | [Career Agent MCP](https://github.com/eldmark/career-agent-mcp) — MCP server for job search, ATS audit and CV compilation | Python · MCP · LaTeX · ATS | ACTIVE |
+| 05 | [Ecoscan](https://github.com/eldmark/backend-ecoscan) — LLM waste classification to geodata | AI · Geodata · Backend | COMPLETE |
+| 06 | [Skyblock Raytracer](https://github.com/eldmark/minecraft_skyblock) — Voxel diorama rendered fully on CPU, 8.11x on 16 threads | Rust · CPU Raytracing · Multithreading | COMPLETE |
+| 07 | [Barber Shop Platform](https://github.com/eldmark/db_barbershop) — Appointments, sales, analytics | Bun · Elysia · PostgreSQL | COMPLETE |
 <!-- PROJECTS_END -->
 
 _The table and the animated panel above are generated from one manifest (`assets/projects/projects.json`); card images are pulled from each project's own repository._
@@ -165,7 +165,7 @@ A Minecraft-style floating-island diorama rendered entirely on the CPU: no OpenG
 ## Currently working on
 
 <!-- CURRENTLY_WORKING_START -->
-- Working on **eldmark/eldmark** (main) — `cee24d8` chore(profile): lead with barbershop
+- Working on **eldmark/eldmark** (main) — `1b2e170` chore(profile): lead with barbershop
 <!-- CURRENTLY_WORKING_END -->
 
 ---
@@ -173,8 +173,7 @@ A Minecraft-style floating-island diorama rendered entirely on the CPU: no OpenG
 ## Recent development
 
 <!-- LATEST_COMMIT_START -->
-- **[galaxy](https://github.com/eldmark/galaxy)** · `bdf3799` — Permite aterrizar y explorar Siroco _(2026-11-11)_
-- **[filmcraft](https://github.com/eldmark/filmcraft)** · `f4090d7` — Docs: fix Ultra Key article in the monitor eyedropper comment (#4585) _(2026-11-09)_
+
 <!-- LATEST_COMMIT_END -->
 
 ---
